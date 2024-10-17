@@ -1,10 +1,12 @@
-class Gasto{
-    fecha
-    registrar_gastos(Gasto){
-
-    }
-    obtener_gasto(){
-        
-    }
+class Gastos {
+  constructor() {
+    this.gastos = [];
+  }
+  registrarGasto(gasto) {
+    this.gastos.push(gasto);
+  }
+  obtenerGastos() {
+    return this.gastos[0];
+  }
 }
-export default Gasto;
+export default Gastos;
